@@ -1,6 +1,6 @@
-- name: "setup {{ component }}""
-  hosts: "{{ component }}" 
+- name: setup mongodb
+  hosts: mongodb 
   become: true
   roles:
-    - "{{ component }}"
+    - mongodb
   
