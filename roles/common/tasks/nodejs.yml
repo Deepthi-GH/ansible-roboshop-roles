@@ -10,5 +10,5 @@
     state: present
     
 - name: install dependencies
-    community.general.npm:
-      path: /app
+  community.general.npm:
+    path: /app
