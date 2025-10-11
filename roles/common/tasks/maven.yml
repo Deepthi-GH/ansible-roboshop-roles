@@ -7,7 +7,7 @@
   - mysql
 
 - name: download dependencies
-  ansible.builtin.command: mvn clean package
+  ansible.builtin.shell: mvn clean package
   args:
     chdir: /app
 
