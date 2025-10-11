@@ -12,9 +12,9 @@
   ansible.builtin.pip: 
     name: "{{ item }}"
     state: present
-    loop:
-    - PyMySQL
-    - cryptography
+  loop:
+  - PyMySQL
+  - cryptography
 
 - name: Import database dump
   community.mysql.mysql_db:
