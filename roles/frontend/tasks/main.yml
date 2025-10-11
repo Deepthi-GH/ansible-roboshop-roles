@@ -24,8 +24,9 @@
     path: /usr/share/nginx/html/
     state: present
 
-- name: import systemd set up from common role
-  ansible.builtin.import_role:
-    name: common
-    tasks_from: systemd-setup.yml
+- name: setup  service 
+  ansible.builtin.template:
+    src: nginx.conf.j2 #ansible opens templates and replaces
+    dest: /etc/nginx/nginx.conf
+
 
