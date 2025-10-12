@@ -1,5 +1,5 @@
 - name: install nginx using dynamic inventory
-  hosts: dynamic-frontend
+  hosts: dynamic_frontend
   become: true
   tasks:
   - name: install nginx
