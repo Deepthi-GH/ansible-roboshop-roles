@@ -1,9 +1,8 @@
-- name: install nginx using dynamc inventory
-  hosts: dynamic_frontend
+- name: install nginx using dynamic inventory
+  hosts: dynamic-frontend
   become: true
   tasks:
   - name: install nginx
   ansible.builtin.dnf:
     name: nginx
     state: present
-    
